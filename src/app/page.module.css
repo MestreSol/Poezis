@@ -212,8 +212,16 @@
   text-align: center;
 }
 
+.textareaContainer {
+  position: relative;
+  display: inline-block;
+}
+
 .textarea {
-  width:500px;
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
   overflow:hidden;
   background-color:#FFF;
   color:#222;
@@ -236,11 +244,20 @@
   border-bottom:1px solid #FFF;
 }
 
+.textarea::placeholder{
+  color:#999;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight:normal;
+}
+
 .submitButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
   background-color: var(--primary-color);
-  color: white;
   border: none;
-  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -249,10 +266,107 @@
   background-color: var(--primary-color-dark);
 }
 
-.feed {
-  padding: 20px;
+.feed{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.feed h2 {
+.feed .feed_title{
+  font-size: 1.5rem;
+  font-weight: 700;
   margin-bottom: 20px;
+  border-bottom: #000 1px solid;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+
+.feed .feed_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.feed .feed_list .post{
+  background: rgba(0, 0, 0, 0.356);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 10px;
+}
+
+.feed .feed_list .post .post_card_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feed .feed_list .post .post_card_header h3{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.post_card_text{
+  color: #fff;
+  margin-top: 20px;
+}
+
+.post_card_button{
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feed_detale {
+  font-style: italic;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-left: 4px solid var(--primary-color);
+  background-color: var(--background);
+  color: var(--text-color);
+  position: relative;
+}
+
+.feed_detale::before {
+  content: open-quote;
+  font-size: 2rem;
+  position: absolute;
+  left: -20px;
+  top: -10px;
+  color: var(--primary-color);
+}
+
+.feed_detale::after {
+  content: close-quote;
+  font-size: 2rem;
+  position: absolute;
+  right: -20px;
+  bottom: -10px;
+  color: var(--primary-color);
+}
+.poem{
+  font-style: italic;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-left: 4px solid var(--primary-color);
+  background-color: var(--background);
+  color: var(--text-color);
+  position: relative;
+}
+
+.poem_strofe{
+  font-style: italic;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-left: 4px solid var(--primary-color);
+  background-color: var(--background);
+  color: var(--text-color);
+  position: relative;
 }
