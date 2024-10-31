@@ -3,15 +3,18 @@
 import React, { useState, useEffect } from "react";
 import Menu from "./components/menu";
 import styles from "./page.module.css";
+import { sql, createPool } from "@vercel/postgres";
+import Cart from "./postgres";
 
 export default function Home() {
   // Load user Info
   const [user, setUser] = useState({
-    name: null,
+    name: "USER123",
     email: "",
   });
 
   const [thought, setThought] = useState("");
+
 
   return (
     <div>
