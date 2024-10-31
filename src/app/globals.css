@@ -7,10 +7,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1f160f;
-    --foreground: #f5f5dc;
-    --text-color: #f5f5dc;
-    --title-color: #f5f5dc;
+    --background-global: #f5f5dc;
+  --background-menu: #f5f5dc;
+  --text-withe: #f5f5dc;
+  --text-black: #1f160f;
   }
 }
 

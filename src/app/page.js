@@ -108,8 +108,8 @@ export default function Home() {
               </p>
               <div className="styles.post_footer">
               <p className={styles.post_author}>USER123</p>
-              <p>
-
+              <p className={styles.poem_detais}>
+                
               </p>
               </div>
             </div>
