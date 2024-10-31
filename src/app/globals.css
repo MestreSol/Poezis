@@ -1,6 +1,9 @@
 :root {
   --background-global: #f5f5dc;
   --background-menu: #f5f5dc;
+  --background-poem: #f5f5dc;
+  --background-comment: #f5f5dc;
+  --background-textarea: #f5f5dc;
   --text-withe: #f5f5dc;
   --text-black: #1f160f;
 }
@@ -8,9 +11,11 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background-global: #f5f5dc;
-  --background-menu: #f5f5dc;
-  --text-withe: #f5f5dc;
-  --text-black: #1f160f;
+    --background-menu: #f5f5dc;
+    --background-poem: #f5f5dc;
+    --background-comment: #f5f5dc;
+    --text-withe: #f5f5dc;
+    --text-black: #1f160f;
   }
 }
 
