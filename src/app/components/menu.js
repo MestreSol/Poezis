@@ -1,4 +1,4 @@
-import styles from "../page.module.css";
+import styles from "./menu.module.css";
 import "../globals.css"; // Importação do globals.css
 import Image from "next/image";
 
@@ -18,6 +18,12 @@ export default function Menu({ user }) {
       <ul className={styles.menu_options}>
         <li>
           <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Autores</a>
+        </li>
+        <li>
+          <a href="#">Recentes</a>
         </li>
       </ul>
       <div className={styles.user_area}>

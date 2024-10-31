@@ -39,6 +39,31 @@ a {
   text-decoration: none;
 }
 
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.carrousel{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carrousel-item{
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.carrousel > * {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+
 
 @media (prefers-color-scheme: dark) {
   html {
