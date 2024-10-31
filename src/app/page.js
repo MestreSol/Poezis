@@ -106,11 +106,72 @@ export default function Home() {
                   </p>
                 </div>
               </p>
-              <div className="styles.post_footer">
-              <p className={styles.post_author}>USER123</p>
-              <p className={styles.poem_detais}>
-                
-              </p>
+              <div className={styles.post_tags}>
+                <ul>
+                  <li>
+                    <a href="#">#GonçalvesDias</a>
+                  </li>
+                  <li>
+                    <a href="#">#CançãoDoExílio</a>
+                  </li>
+                  <li>
+                    <a href="#">#Poesia</a>
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.post_footer}>
+                <p className={styles.post_author}>USER123</p>
+                <p className={styles.poem_details}>
+                  Gonçalves Dias - 1823-1864
+                </p>
+              </div>
+              <div className={styles.post_actions}>
+                <ul>
+                  <li>
+                    <button>
+                      <i className="fa-regular fa-heart"></i>
+                      100k
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <i className="fa-regular fa-comment"></i>
+                      100k
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <i className="fa-regular fa-share"></i>
+                      100k
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.post_comment}>
+                <div className={styles.add_comment}>
+                  <textarea
+                    placeholder="Comente..."
+                    value={thought}
+                    onChange={(e) => setThought(e.target.value)}
+                  />
+                  <button>
+                    <i className="fa-regular fa-paper-plane"></i>
+                  </button>
+                </div>
+              </div>
+              <div className={styles.comment_list}>
+                <div className={styles.comment}>
+                  <p className={styles.comment_author}>USER123</p>
+                  <p className={styles.comment_text}>Comentário 1</p>
+                </div>
+                <div className={styles.comment}>
+                  <p className={styles.comment_author}>USER123</p>
+                  <p className={styles.comment_text}>Comentário 2</p>
+                </div>
+                <div className={styles.comment}>
+                  <p className={styles.comment_author}>USER123</p>
+                  <p className={styles.comment_text}>Comentário 3</p>
+                </div>
               </div>
             </div>
           </div>

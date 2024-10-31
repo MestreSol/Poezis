@@ -371,3 +371,157 @@
   color: var(--text-color);
   position: relative;
 }
+.post_footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.post_footer .post_author{
+  display: flex;
+  align-items: center;
+}
+
+.post_footer .post_author img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post_footer .post_author h4{
+  color: #fff;
+}
+
+.post_footer .post_author p{
+  color: #fff;
+  font-style: italic;
+}
+
+.post_footer .poem_details{
+  display: flex;
+  align-items: center;
+}
+
+.post_actions{
+  display: flex;
+  align-items: center;
+}
+
+.post_actions button{
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.post_actions button:hover{
+  background: var(--primary-color-dark);
+}
+
+.post_actions button:disabled{
+  background: #ccc;
+  cursor: not-allowed;
+}
+.post_actions ul{
+  display: flex;
+  list-style: none;
+}
+
+.post_actions ul li{
+  margin-right: 20px;
+}
+
+.post_actions ul li a{
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.post_actions ul li a:hover{
+  color: var(--title-color);
+}
+
+.post_tags{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.post_tags ul{
+  display: flex;
+  list-style: none;
+}
+
+.post_tags ul li{
+  margin-right: 20px;
+}
+
+.post_tags ul li a{
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.post_comment{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.add_comment{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.add_comment textarea{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  resize: none;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.add_comment button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: var(--foreground);
+  color: var(--background);
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.comment_list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.comment_list .comment{
+  background: rgba(0, 0, 0, 0.356);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 10px;
+}
+
+.comment_list .comment_author{
+  display: flex;
+  align-items: center;
+}
+
+.comment_list .comment_text{
+  color: #fff;
+  margin-top: 20px;
+}
+
