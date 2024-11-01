@@ -8,52 +8,26 @@ datasource db {
 }
  
 
-model users (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100),
-    email VARCHAR(100),
-    password VARCHAR(100)
-)
+model User {
+    id            Int      @id @default(autoincrement())
+    email         String   @unique
+    name          String?
+    password      String
+    role         Role     @default(USER)
+    posts         Post[]
+}
 
-model tags (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100)
-);
-model posts (
-    id SERIAL PRIMARY KEY,
-    title VARCHAR(100),
-    content TEXT,
-    Sheare INTEGER DEFAULT 0,
+model Post{
+    id            Int      @id @default(autoincrement())
+    title         String
+    content       String
+    published     Boolean  @default(false)
+    authorId      Int?
+    author        User?    @relation(fields: [authorId], references: [id])
+}
 
-    data TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    
-    user_id INTEGER REFERENCES users(id)
-);
+enum Role {
+    USER
+    ADMIN
+}
 
-model posts_tags (
-    post_id INTEGER REFERENCES posts(id),
-    tag_id INTEGER REFERENCES tags(id),
-    PRIMARY KEY (post_id, tag_id)
-);
-
-model comments (
-    id SERIAL PRIMARY KEY,
-    content TEXT,
-    
-    data TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-
-    user_id INTEGER REFERENCES users(id),
-    post_id INTEGER REFERENCES posts(id)
-);
-
-model posts_likes (
-    post_id INTEGER REFERENCES posts(id),
-    user_id INTEGER REFERENCES users(id),
-    PRIMARY KEY (post_id, user_id)
-);
-
-model comments_likes (
-    comment_id INTEGER REFERENCES comments(id),
-    user_id INTEGER REFERENCES users(id),
-    PRIMARY KEY (comment_id, user_id)
-);

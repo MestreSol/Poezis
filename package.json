@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "vercel-build": "prisma generate && prisma migrate deploy && next build"
+    "vercel-build": "dotenv -e .env.production.local prisma generate && dotenv -e .env.production.local prisma migrate deploy && next build",
+    "vercel-build:dev": "dotenv -e .env.development.local prisma generate && dotenv -e .env.development.local prisma migrate deploy && next build",
+    "vercel-build:prod": "dotenv -e .env.production.local prisma generate && dotenv -e .env.production.local prisma migrate deploy && next build"
   },
   "dependencies": {
     "@prisma/client": "^5.21.1",
@@ -18,6 +20,8 @@
     "react-dom": "19.0.0-rc-02c0e824-20241028"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv-cli": "^7.0.0",
     "eslint": "^8",
     "eslint-config-next": "15.0.2"
   }
