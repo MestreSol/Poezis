@@ -2,8 +2,10 @@
 
 import React, { useState } from "react";
 import Menu from "./components/menu";
-import styles from "./page.module.css";
+import styles from "../../styles/page.module.css";
 import Post from "./components/post";
+import poems from "./context/staticPoemExemple";
+
 
 export default function Home() {
   // Load user Info
@@ -40,7 +42,16 @@ export default function Home() {
             ideias
           </h2>
           <div className={styles.feed_list}>
-            <Post></Post>
+          {Object.values(poems).map((poem, index) => (
+            <Post
+              key={index}
+              title={poem.poem_title}
+              date={poem.poem_date}
+              content={poem.poem_content}
+              tags={poem.poem_tags}
+              author={poem.poem_author}
+            />
+          ))}
           </div>
         </section>
       </div>

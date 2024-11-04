@@ -1,5 +1,4 @@
-import styles from "./menu.module.css";
-import "../globals.css"; // Importação do globals.css
+import styles from "../../../styles/menu.module.css";
 import Image from "next/image";
 
 export default function Menu({ user }) {

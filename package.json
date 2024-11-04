@@ -14,6 +14,7 @@
   "dependencies": {
     "@prisma/client": "^5.21.1",
     "@vercel/postgres": "^0.10.0",
+    "lowdb": "^3.0.0",
     "next": "15.0.2",
     "prisma": "^5.21.1",
     "react": "19.0.0-rc-02c0e824-20241028",
