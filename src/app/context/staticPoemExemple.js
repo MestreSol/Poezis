@@ -379,7 +379,54 @@ e te deixo no livro, como lenda abismal.<br/>
       details: "Aristoteles, 2408 anos, Campinas, SP",
     },
   },
-
+  poem5:
+  {
+    poem_title: "Voz do silencio",
+    poem_date: "04/11/2024",
+    poem_content: `
+      <p class="poem_strofe" style="font-style: italic;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-left: 4px solid var(--primary-color);
+    background-color: var(--background);
+    color: var(--text-color);
+    position: relative;">
+    Tua voz me traz calmaria,<br/>
+Um sopro doce de felicidade.<br/>
+Cada aviso, um rastro de alegria,<br/>
+Um sorriso em minha realidade.
+    </p>
+    <p class="poem_strofe" style="font-style: italic;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-left: 4px solid var(--primary-color);
+    background-color: var(--background);
+    color: var(--text-color);
+    position: relative;">
+    Teus sorrisos me levam aos céus,<br/>
+Um presente que a vida me deu.<br/>
+Te conquistar, bênção dos céus,<br/>
+Um sonho que Deus escreveu.
+    </p>
+    <p class="poem_strofe" style="font-style: italic;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-left: 4px solid var(--primary-color);
+    background-color: var(--background);
+    color: var(--text-color);
+    position: relative;">
+    Teu olhar, um tempo que para,<br/>
+Me deixa sem ar, sem chão.<br/>
+E tua ausência, ferida rara,<br/>
+Me envolve na escuridão.
+    </p>
+    `,
+    poem_tags: ["#Lorem", "#Ipsum", "#Dolor", "#Sit", "#Amet"],
+    poem_author: {
+      name: "MestreSol",
+      details: "Aristoteles, 2408 anos, Campinas, SP",
+    },
+  }
 };
 
 export default poem;
