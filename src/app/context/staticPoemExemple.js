@@ -1,4 +1,51 @@
 const poem = {
+  poem0:{
+    poem_title: "Linhas Silenciosas",
+    poem_data: "27/02/2025",
+    poem_content: `
+    <p class="poem_strofe" style="font-style: italic;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-left: 4px solid var(--primary-color);
+  background-color: var(--background);
+  color: var(--text-color);
+  position: relative;">
+Há versos que o vento leva,<br/>
+Palavras que dançam no ar.<br/>
+Nem sempre a voz se atreve,<br/>
+A tudo o que quer falar.
+</p>
+    <p class="poem_strofe" style="font-style: italic;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-left: 4px solid var(--primary-color);
+  background-color: var(--background);
+  color: var(--text-color);
+  position: relative;">
+Entre pausas e reticências,<br/>
+Ecoa um brilho no olhar.<br/>
+Um mistério sem urgência,<br/>
+Que o tempo há de revelar.
+</p>
+    <p class="poem_strofe" style="font-style: italic;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-left: 4px solid var(--primary-color);
+  background-color: var(--background);
+  color: var(--text-color);
+  position: relative;">
+Se a noite soubesse o que penso,<br/>
+Se a lua pudesse entender,<br/>
+Talvez desenhasse em silêncio<br/>
+O que insisto em não dizer.
+</p>
+   `,
+    poem_tags: ["#Lorem", "#Ipsum", "#Dolor", "#Sit", "#Amet"],
+    poem_author: {
+      name: "MestreSol",
+      details: "Aristoteles, 2408 anos, Campinas, SP",
+    },
+  },
   poem1: {
     poem_title: "Silencio",
     poem_date: "04/11/2024",
